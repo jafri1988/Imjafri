@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      
+        <form method="post" action="LoginHandler.php">
+            <br><br>
+          
+            <!-- textfield to get username and password -->
+            User Name: <input type="text" name="username" value="" /><br><br>
+            Password: <input type="password" name="userpwd" value="" /><br><br>
+            <input type="submit" value="Submit"/>
+          
+        </form>
+    </body>
+</html>
+
+
+PHP CODE (LoginHandler.php)
+
+<?php
+
+//getting username and password from the login page
+$user_name=$_POST['username'];
+$password=$_POST['userpwd'];
+
+//testing username and password
+$test_username="john";
+$test_password="j123";
+
+//displaying the username and password
+echo "User Name: ".$user_name.", Password: ".$password;
+
+//comparing the username and password
+if(($user_name===$test_username) && ($password===$test_password))
+{
+    //creating session
+    session_start();
+  
+    //creating session variable
+    $_SESSION['username']=$user_name;
+  
+    //displaying link to MainMenu.php
+    echo "<br><br>";
+    echo "Link to <a href='MainMenu.php'>Main Menu</a>";
+  
+}
+else
+{
+    //displaying the link to Login.html
+    echo "<br><br>";
+    echo "Link to <a href='Login.html'>Login Page</a>";
+}
+  
+
+?>
+
+PHP CODE(MainMenu.php)
+
+<?php
+
+//starting session if any
+session_start();
+
+//checking session variable is set or not
+if(isset($_SESSION['username']))
+{
+    // welcome message
+    echo "Hello ".$_SESSION['username'];
+}
+else
+{
+    // if no session , link to Login.html
+     echo "Link to <a href='Login.html'>Login Page</a>";
+}
+  
+?>
