@@ -1,0 +1,49 @@
+body 
+{background-image:url('bk.jpg');}
+
+menu {
+	font-size:30px;
+	font-family:"Baskerville Old Face";
+	font-weight:bold;
+  text-align:center;
+  padding:0px 0px;
+	color:black;
+}
+
+.sidebar {
+  height: 100%;
+  width: 100px;
+  position:absolute;
+  top: 70;
+  left: 0;
+  padding:15px 13px;
+
+}
+hr {
+    border: 2px solid black;
+  }
+
+  .vr {
+    border: 2px solid black;
+  }
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color:rgba(62, 33, 109, 0.938)
+  
+}
+
+	.footer {
+            position: -webkit-sticky;
+            font-size:15px;
+            font-weight:bold;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+	font-family:"Baskerville Old Face";
+		color:rgba(62, 33, 109, 0.938);
+	clear:both;
+	text-align:center;
+}
