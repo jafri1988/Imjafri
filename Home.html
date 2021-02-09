@@ -1,45 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<title>Humayoon Jafri</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="cascade1.css">
 
-</head>
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-<link rel="stylesheet" href="cascade.css">
 
-
-</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+</style>
 <body>
 
-<div class="sidebar">
-  <a href="https://www.linkedin.com/in/humayoon-jafri-148797150" target="_blank"><u>Linkedin</u></a>
-  <a href="https://www.facebook.com/humayoon.jafri" target="_blank">Facebook</a>
+<!-- Navbar -->
+<div class="w3-top"></div>
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" 
+    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+    </div>
 
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
 </div>
-<div class="vl"></div>
 
-	<menu>
-		    <a>Home </a> |
-			<a href="aboutme.html">About Me</a> |
-			<a href="resume.html">Resume</a> | 
-			<a href="projects.html">Projects</a> | 
-			<a href="contact.html">Contact</a>
-	</menu>
-	<hr>
 
-	<p style="text-align:center"><img src="Humayoon jafri - Copy.jpg"width="900" height="500" ></p> 
-	<p style="text-align:center;font-size:25px;color:black;">Humayoon Jafri<br>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      
+
+      <p style="text-align:center"><img src="Humayoon jafri - Copy.jpg"width="900" height="500" ></p> 
+	<a style="text-align:center;font-size:25px;color:black;">Humayoon Jafri<br>
 	Bachelors of Science in Business with an Information System Emphasis</p>
-	
 
-	<br>
-	<br><br><br><br><br><br><br>
-	<hr>
 
-	<div class="footer">
-		Copyright &copy; Jafri 2021.
-	</div>  
+    </div>
+    
 
-</body>
-</html>
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+Copyright &copy; Jafri 2021.
+</footer>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
 </html>
