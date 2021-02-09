@@ -7,7 +7,7 @@
 
 /* Media Queries: Tablet Landscape */
 
-div.content { width: 1000px }
+div.content { width: 100% }
 
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
