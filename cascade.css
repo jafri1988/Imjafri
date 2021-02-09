@@ -38,18 +38,7 @@ hr {
   
 }
 
-	.footer {
-            position:-ms-page;
-            font-size:15px;
-            font-weight:bold;
-            left: 0;
-            bottom: 100;
-            width: 100%;
-	font-family:"Baskerville Old Face";
-		color:rgba(62, 33, 109, 0.938);
-	clear:both;
-	text-align:center;
-}
+
 
 * {
   box-sizing: border-box;
