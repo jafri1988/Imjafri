@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: "Baskerville Old Face";
+    background-image: url('check.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+   }
+   
+  
+  
+   /* Overall sidebar design*/
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color:#111;
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* Side bar content elements excluding the selected one*/
+  .sidebar a {
+    display: block;
+    color:#818181;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+     /* Selected Side bar elements excluding other elements*/
+  .sidebar a.active {
+    background-color:blueviolet;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* Side bar elements when you pointed out*/
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color:#f1f1f1;
+    font-size: 25px;
+  }
+
+  /* Paragraph styling*/
+  div.content {
+    margin-left: 200px;
+    padding: 1px 115px;
+    height: 1000px;
+    font-size: 25px;
+  }
+  /*For Responsiveness*/
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
