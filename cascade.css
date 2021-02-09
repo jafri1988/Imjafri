@@ -14,7 +14,7 @@ menu {
 	color:black;
 }
 
-img { max-width: 100%; height: auto; }
+
 .sidebar {
   height: 100%;
   width: 100px;
@@ -55,8 +55,8 @@ hr {
   padding: 15px;
 }
 
-html {
-  font-family: "Lucida Sans", sans-serif;
+html { 
+	font-family: "Baskerville Old Face";
 }
 
 .header {
