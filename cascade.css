@@ -24,7 +24,7 @@ menu {
   padding:0px 0px;
 	color:black;
 }
-
+img { max-width: 100%; height: auto; }
 .sidebar {
   height: 100%;
   width: 100px;
