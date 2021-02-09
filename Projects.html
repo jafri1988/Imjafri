@@ -1,7 +1,9 @@
 <html>
 
 </head>
-
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 <link rel="stylesheet" href="cascade.css">
 
 </head>
@@ -23,10 +25,49 @@
 			<a href="contact.html">Contact</a>
 	</menu>
 	<hr>
+	<p style="text-align:center;font-size:25px;color:black;"><b>SQL PROJECT-UCCS</b><br>
+		<div style="font-size:20px;color:black;position:relative; left:200px; top:2px;">
+			<b><u>Project Details:</u></b><br>
+			No-Where-To-Be-Found Hospital (NWTBF) hires your team to develop a “Hospital Inpatient Information System” (HIIS). 
+			Your deliverables should contain an ERD and the complete SQL script.Your deliverables have to fulfill ALL of the following 
+			functional and non-functional requirements. <br><br>
+<b><u>Functional Requirements:</u></b><br><br>
+•	Generate an ERD based on the requirements. <br>
+•	It is quite possible that different people share the same first and last names. Thus it is not acceptable to use a person’s first and last name to identify a person. <br> 
+•	Each inpatient has a unique patient ID when the patient is admitted to the hospital at the first time. This ID will not change throughout the patient’s life time. Each patient also has a first name, last name, date of birth, a phone number, and an email. <br>
+•	Every time when an inpatient is admitted to the hospital, the patient will be assigned to a hospital admission ID. Note, unlike the patient ID, this admission ID will change every time when the patient is admitted to the hospital. For each admission, besides the admission ID, HIIS also needs to record the dates that the patient is admitted and released from the hospital, and the doctor who is in charge of this patient for this admission. <br>
+•	For each admission, each inpatient should have one emergency contact person. HIIS needs to keep track of that person’s unique contact ID, first and last name, a phone number, an email, and the relationship to the patient. Note the emergency contact person may be different at different admissions. <br>
+•	For each admission, an inpatient may experience multiple treatments. <br>
+•	For each treatment should have a unique treatment ID, treatment date, treatment description, and exactly one doctor who is in charge of the treatment. Note the doctor in charge of a treatment may or may not be the same as the doctor who is in charge of that inpatient for this admission. <br>
+•	For each doctor, HIIS will record the unique doctor ID, first and last name, department, and the list of specialties. Note each doctor can have any number of specialties. Each doctor can only be associated to one and exactly one department. <br>
+•	Each department has a unique department ID, department name, building name, floor number, and exactly one department head doctor. <br>
+•	Generate the corresponding SQL script based on your ERD. <br>
+•	The SQL script should create the database named “HIIS” and all the tables, insert at least 5 records in each table, and perform the following query practices. The query practices actually serve to test the correctness of your HIIS design. If a critical link between tables is missing, mostly the related query can not be performed. <br>
+•	For each inpatient, list all his admission records including patient’s ID, name, the dates that the patient is admitted and released from the hospital, and the doctor (ID and name) who is in charge of this patient for this admission. <br>
+•	For each patient, list the patient’s ID and name, the ID and name of the doctors who have ever been in charge of that patient’s admissions (not treatments!), and the number of times that doctor has been the doctor-in-charge for that patient. <br>
+•	For each inpatient, list the patient’s ID, name, and all his emergency contact persons’ ID and name. <br>
+•	For a specific inpatient’s specific admission record (you can choose anyone in your system), list all his treatments including the patient’s ID, name, the dates of the treatments, each treatment description, and each treatment’s doctor’s ID and name. <br>
+•	For each doctor, list the doctor’s ID, name and all his specialties. <br>
+•	For each department, list the department name, its head doctor’s ID, name and his specialties. <br>
+•	For each department, list the department name, all of its doctors’ IDs, names and the number of each doctor’s specialties. <br><br>
 
-	<p style="text-align:center"><img src="pic5.png" ></p>
-	<p style="text-align:center;font-size:25px;color:black;">Humayoon Jafri<br>
-	Bachelors of Science in Business with an Information System Emphasis</p>
+<b><u>Non-Functional Requirements: </u></b><br><br>
+•	Your HIIS design should try to reduce unnecessary redundancies as much as possible. <br>
+•	The ERD can be originally created by MS Visio or similar software. <br>
+•	Insert the ERD figure to a Word file. <br>
+•	Add any necessary comments or explanations below the ERD figure in order to facilitate your client to understand your ERD. <br>
+•	The SQL script should be based the MySQL DBMS. <br>
+•	It is extremely important that the ERD and the SQL script are consistent in every way! <br>
+•	You may apply your best assumptions to determine a cardinality if that cardinality related information is NOT available in this requirement document. <br>
+•	You may apply your best assumptions to determine whether a field (column) is mandatory or optional. <br>
+•	Your assumptions have to be intuitively correct. <br>
+•	The script has to include necessary and illustrative documentations in order to facilitate your client to understand your script. <br>
+•	All submitted script and documentation must be designed, developed, and typed by the team members. Copying code from other teams, Internet, or other third-party resources are strongly prohibited, and may lead to Fail in the class. <br>
+•	The SQL script has to compile successfully, and produce correct results. <br>
+•	The script has to be reasonably efficient. <br>
+•	The script has to follow the standard code style, such as indentation, alignment, etc. <br>
+			
+
 	
 
 	<br>
