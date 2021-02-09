@@ -6,6 +6,9 @@
 }
 
 /* Media Queries: Tablet Landscape */
+
+div.content { width: 1000px }
+
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
